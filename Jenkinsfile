@@ -1,4 +1,4 @@
-def registry = 'https://shefali.jfrog.io'
+def registry = 'https://shefali1.jfrog.io'
 //def imageName = 'https://shefali.jfrog.io/valaxy-docker-local/ttrend'
 //def version   = '2.1.4'
 pipeline {
@@ -58,7 +58,7 @@ environment {
                           "files": [
                             {
                               "pattern": "jarstaging/(*)",
-                              "target": "libs-release-local/{1}",
+                              "target": "shef-libs-release-local/{1}",
                               "flat": "false",
                               "props" : "${properties}",
                               "exclusions": [ "*.sha1", "*.md5"]
